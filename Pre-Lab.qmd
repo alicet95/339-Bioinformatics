@@ -11,39 +11,17 @@ editor: visual
 
 The transcriptome looks at individual organinisms and what they are transcribing currently. The metatranscriptome broadens this by exploring whole microbial communities.
 
-Given that the gut is host to a very large community of bacteria, it is much more efficient and informative to sequence for the entire colony from the sample, rather than identifying what a single organism is doing right now.
+Given that the gut is host to a very large community of bacteria, it is much more efficient and informative to sequence for the entire colony, rather than for an individual.
 
 ## [Question 2:]{.underline}
 
 ##### *How many reads are in the first extract above? Explain how you worked it out.*
 
-```         
-@1-21800/1 
-```
-
-```{bash}
-
-```
-
-```         
-
-+ 
-FAFFFJJJJJJJJAJJJJJJJJJJ<JJJJJJJJJJJJJJJJJFJJJJJJFJ,<JJJFJJJ 
-@1-21798/1 
-GGAGAAGCGGGAGAGAGGGGAAATGATTGGATCTTAATTTTGGAGGCGGATGATAGGTAG 
-+ 
-FAFFFJJJJJJJJJJJJJJJJJJJ7JJJJJJJJJJAJJJFJJJJJJJFJJJJJFJJJFJJ 
-@1-21796/1 
-CGGTAGCGGATATCTCGGACCCGACGAATATCACGATCGGTAACCCGGATTTGAATCCCC 
-+ 
-FAFFFJJAJJJJJJJJFJJJJJAJJAJJJJJJJJJ7JJJJJJJJJAJJJJJJJJJJFJJJ
-```
-
 Every read takes exactly 4 lines, usually come in pairs, typically 150 bases long, has a name beginning with "\@", a "+" separator, and one character per base, recording the confidence.
 
 In this case sequences have been shortened to 60 bases from 150.
 
-Assuming they all have pairs, and follow the above logic, there will be 6 reads.
+Assuming they all have pairs, and following the above logic, there will be 6 reads.
 
 ## [Question 3:]{.underline}
 
@@ -55,12 +33,16 @@ Assuming they all have pairs, and follow the above logic, there will be 6 reads.
 
 ## [Question 4:]{.underline}
 
-##### *Write the command that would list only the three forward read files.*
+##### *Write the command that would list **only the six .fq files**, and none of the other three.*
 
-```{bash}
-
+```         
+ls *.fq
 ```
 
 ## [Question 5:]{.underline}
 
 ##### *Write the command that would list only the three forward read files.*
+
+```         
+ls *1.fq
+```

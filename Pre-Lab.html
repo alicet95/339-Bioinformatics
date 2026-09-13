@@ -116,31 +116,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="we-will-be-measuring-a-metatranscriptome-rather-than-a-transcriptome.-given-what-a-transcriptome-is-work-out-what-the-meta-must-add-and-say-why-that-is-the-right-thing-to-measure-for-a-sample-taken-from-someones-gut." class="level5">
 <h5 class="anchored" data-anchor-id="we-will-be-measuring-a-metatranscriptome-rather-than-a-transcriptome.-given-what-a-transcriptome-is-work-out-what-the-meta-must-add-and-say-why-that-is-the-right-thing-to-measure-for-a-sample-taken-from-someones-gut."><em>We will be measuring a metatranscriptome rather than a transcriptome. Given what a transcriptome is, work out what the “meta” must add, and say why that is the right thing to measure for a sample taken from someone’s gut.</em></h5>
 <p>The transcriptome looks at individual organinisms and what they are transcribing currently. The metatranscriptome broadens this by exploring whole microbial communities.</p>
-<p>Given that the gut is host to a very large community of bacteria, it is much more efficient and informative to sequence for the entire colony from the sample, rather than identifying what a single organism is doing right now.</p>
+<p>Given that the gut is host to a very large community of bacteria, it is much more efficient and informative to sequence for the entire colony, rather than for an individual.</p>
 </section>
 </section>
 <section id="question-2" class="level2">
 <h2 class="anchored" data-anchor-id="question-2"><u>Question 2:</u></h2>
 <section id="how-many-reads-are-in-the-first-extract-above-explain-how-you-worked-it-out." class="level5">
 <h5 class="anchored" data-anchor-id="how-many-reads-are-in-the-first-extract-above-explain-how-you-worked-it-out."><em>How many reads are in the first extract above? Explain how you worked it out.</em></h5>
-<pre><code>@1-21800/1 </code></pre>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<pre><code>
-+ 
-FAFFFJJJJJJJJAJJJJJJJJJJ&lt;JJJJJJJJJJJJJJJJJFJJJJJJFJ,&lt;JJJFJJJ 
-@1-21798/1 
-GGAGAAGCGGGAGAGAGGGGAAATGATTGGATCTTAATTTTGGAGGCGGATGATAGGTAG 
-+ 
-FAFFFJJJJJJJJJJJJJJJJJJJ7JJJJJJJJJJAJJJFJJJJJJJFJJJJJFJJJFJJ 
-@1-21796/1 
-CGGTAGCGGATATCTCGGACCCGACGAATATCACGATCGGTAACCCGGATTTGAATCCCC 
-+ 
-FAFFFJJAJJJJJJJJFJJJJJAJJAJJJJJJJJJ7JJJJJJJJJAJJJJJJJJJJFJJJ</code></pre>
 <p>Every read takes exactly 4 lines, usually come in pairs, typically 150 bases long, has a name beginning with “@”, a “+” separator, and one character per base, recording the confidence.</p>
 <p>In this case sequences have been shortened to 60 bases from 150.</p>
-<p>Assuming they all have pairs, and follow the above logic, there will be 6 reads.</p>
+<p>Assuming they all have pairs, and following the above logic, there will be 6 reads.</p>
 </section>
 </section>
 <section id="question-3" class="level2">
@@ -148,7 +133,7 @@ FAFFFJJAJJJJJJJJFJJJJJAJJAJJJJJJJJJ7JJJJJJJJJAJJJJJJJJJJFJJJ</code></pre>
 <section id="one-of-the-real-files-in-this-lab-has-43600-lines-in-it.-how-many-reads-is-that" class="level5">
 <h5 class="anchored" data-anchor-id="one-of-the-real-files-in-this-lab-has-43600-lines-in-it.-how-many-reads-is-that"><em>One of the real files in this lab has 43,600 lines in it. How many reads is that?</em></h5>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dv">43600</span> <span class="sc">/</span> <span class="dv">4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">43600</span> <span class="sc">/</span> <span class="dv">4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 10900</code></pre>
 </div>
@@ -157,17 +142,16 @@ FAFFFJJAJJJJJJJJFJJJJJAJJAJJJJJJJJJ7JJJJJJJJJAJJJJJJJJJJFJJJ</code></pre>
 </section>
 <section id="question-4" class="level2">
 <h2 class="anchored" data-anchor-id="question-4"><u>Question 4:</u></h2>
-<section id="write-the-command-that-would-list-only-the-three-forward-read-files." class="level5">
-<h5 class="anchored" data-anchor-id="write-the-command-that-would-list-only-the-three-forward-read-files."><em>Write the command that would list only the three forward read files.</em></h5>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<section id="write-the-command-that-would-list-only-the-six-.fq-files-and-none-of-the-other-three." class="level5">
+<h5 class="anchored" data-anchor-id="write-the-command-that-would-list-only-the-six-.fq-files-and-none-of-the-other-three."><em>Write the command that would list <strong>only the six .fq files</strong>, and none of the other three.</em></h5>
+<pre><code>ls *.fq</code></pre>
 </section>
 </section>
 <section id="question-5" class="level2">
 <h2 class="anchored" data-anchor-id="question-5"><u>Question 5:</u></h2>
-<section id="write-the-command-that-would-list-only-the-three-forward-read-files.-1" class="level5">
-<h5 class="anchored" data-anchor-id="write-the-command-that-would-list-only-the-three-forward-read-files.-1"><em>Write the command that would list only the three forward read files.</em></h5>
+<section id="write-the-command-that-would-list-only-the-three-forward-read-files." class="level5">
+<h5 class="anchored" data-anchor-id="write-the-command-that-would-list-only-the-three-forward-read-files."><em>Write the command that would list only the three forward read files.</em></h5>
+<pre><code>ls *1.fq</code></pre>
 </section>
 </section>
 
