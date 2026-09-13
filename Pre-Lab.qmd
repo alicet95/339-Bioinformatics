@@ -5,23 +5,51 @@ format: html
 editor: visual
 ---
 
-## Quarto
+## [Question 1:]{.underline}
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+##### *We will be measuring a metatranscriptome rather than a transcriptome. Given what a transcriptome is, work out what the "meta" must add, and say why that is the right thing to measure for a sample taken from someone's gut.*
 
-## Running Code
+The transcriptome looks at individual organinisms and what they are transcribing currently. The metatranscriptome broadens this by exploring whole microbial communities.
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+Given that the gut is host to a very large community of bacteria, it is much more efficient and informative to sequence for the entire colony from the sample, rather than identifying what a single organism is doing right now.
 
-```{r}
-1 + 1
+## [Question 2:]{.underline}
+
+##### *How many reads are in the first extract above? Explain how you worked it out.*
+
+```         
+@1-21800/1 
+TTACGGAGAAGAGAATACGGGATATCGTTTGATAAAATTCCCTTGGTTACCTCAATCGAA 
++ 
+FAFFFJJJJJJJJAJJJJJJJJJJ<JJJJJJJJJJJJJJJJJFJJJJJJFJ,<JJJFJJJ 
+@1-21798/1 
+GGAGAAGCGGGAGAGAGGGGAAATGATTGGATCTTAATTTTGGAGGCGGATGATAGGTAG 
++ 
+FAFFFJJJJJJJJJJJJJJJJJJJ7JJJJJJJJJJAJJJFJJJJJJJFJJJJJFJJJFJJ 
+@1-21796/1 
+CGGTAGCGGATATCTCGGACCCGACGAATATCACGATCGGTAACCCGGATTTGAATCCCC 
++ 
+FAFFFJJAJJJJJJJJFJJJJJAJJAJJJJJJJJJ7JJJJJJJJJAJJJJJJJJJJFJJJ
 ```
 
-You can add options to executable code like this
+Every read takes exactly 4 lines, usually come in pairs, typically 150 bases long, has a name beginning with "\@", a "+" separator, and one character per base, recording the confidence.
+
+In this case sequences have been shortened to 60 bases from 150.
+
+Assuming they all have pairs, and follow the above logic, there will be 6 reads.
+
+## [Question 3:]{.underline}
+
+##### *One of the real files in this lab has 43,600 lines in it. How many reads is that?*
 
 ```{r}
-#| echo: false
-2 * 2
+43600 / 4
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+## [Question 4:]{.underline}
+
+##### *Write the command that would list only the three forward read files.*
+
+## [Question 5:]{.underline}
+
+##### *Write the command that would list only the three forward read files.*
