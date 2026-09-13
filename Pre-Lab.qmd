@@ -19,7 +19,14 @@ Given that the gut is host to a very large community of bacteria, it is much mor
 
 ```         
 @1-21800/1 
-TTACGGAGAAGAGAATACGGGATATCGTTTGATAAAATTCCCTTGGTTACCTCAATCGAA 
+```
+
+```{bash}
+
+```
+
+```         
+
 + 
 FAFFFJJJJJJJJAJJJJJJJJJJ<JJJJJJJJJJJJJJJJJFJJJJJJFJ,<JJJFJJJ 
 @1-21798/1 
@@ -49,6 +56,10 @@ Assuming they all have pairs, and follow the above logic, there will be 6 reads.
 ## [Question 4:]{.underline}
 
 ##### *Write the command that would list only the three forward read files.*
+
+```{bash}
+
+```
 
 ## [Question 5:]{.underline}
 
