@@ -1,15 +1,18 @@
 ---
 title: "BIOL 339 Pre-Lab"
 author: "Alice Thompson"
-format: html
+format: docx
 editor: visual
+output: word_document
+
+library(knitr)
 ---
 
 ## [Question 1:]{.underline}
 
 ##### *We will be measuring a metatranscriptome rather than a transcriptome. Given what a transcriptome is, work out what the "meta" must add, and say why that is the right thing to measure for a sample taken from someone's gut.*
 
-The transcriptome looks at individual organinisms and what they are transcribing currently. The metatranscriptome broadens this by exploring whole microbial communities.
+The transcriptome looks at individual organisms and what they are transcribing currently. The metatranscriptome broadens this by exploring what the whole microbial community is currently transcribing.
 
 Given that the gut is host to a very large community of bacteria, it is much more efficient and informative to sequence for the entire colony, rather than for an individual.
 
@@ -21,7 +24,7 @@ Every read takes exactly 4 lines, usually come in pairs, typically 150 bases lon
 
 In this case sequences have been shortened to 60 bases from 150.
 
-Assuming they all have pairs, and following the above logic, there will be 6 reads.
+Assuming they all have pairs, and following the above logic, there will be 6 reads total, with 3 of the forward reads being printed above.
 
 ## [Question 3:]{.underline}
 
