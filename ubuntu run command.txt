@@ -1,0 +1,3 @@
+conda activate biol339
+cd ~339_lab-main
+jupyter lab
